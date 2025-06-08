@@ -1,19 +1,40 @@
 {
-    "books": [
-      { "id": 1, "title": "1984", "authorId": 1, "publishedYear": 1949 },
-      { "id": 2, "title": "Brave New World", "authorId": 2, "publishedYear": 1932 },
-      { "id": 3, "title": "To Kill a Mockingbird", "authorId": 3, "publishedYear": 1960 },
-      { "id": 4, "title": "Animal Farm", "authorId": 1, "publishedYear": 1945 },
-      { "id": 5, "title": "The Doors of Perception", "authorId": 2, "publishedYear": 1954 },
-      { "id": 6, "title": "Go Set a Watchman", "authorId": 3, "publishedYear": 2015 },
-      { "id": 7, "title": "Homage to Catalonia", "authorId": 1, "publishedYear": 1938 },
-      { "id": 8, "title": "Island", "authorId": 2, "publishedYear": 1962 }
-    ],
-    "authors": [
-      { "id": 1, "name": "George Orwell", "birthYear": 1903 },
-      { "id": 2, "name": "Aldous Huxley", "birthYear": 1894 },
-      { "id": 3, "name": "Harper Lee", "birthYear": 1926 },
-      { "id": 4, "name": "J.K. Rowling", "birthYear": 1965 },
-      { "id": 5, "name": "Stephen King", "birthYear": 1947 }
-    ]
-  }
+  "books": [
+    { "id": 1, "title": "1984", "authorId": 1, "publishedYear": 1949 },
+    { "id": 2, "title": "Animal Farm", "authorId": 1, "publishedYear": 1945 },
+    { "id": 3, "title": "Brave New World", "authorId": 2, "publishedYear": 1932 },
+    { "id": 4, "title": "Island", "authorId": 2, "publishedYear": 1962 },
+    { "id": 5, "title": "To Kill a Mockingbird", "authorId": 3, "publishedYear": 1960 },
+    { "id": 6, "title": "Go Set a Watchman", "authorId": 3, "publishedYear": 2015 },
+    { "id": 7, "title": "Harry Potter and the Philosopher's Stone", "authorId": 4, "publishedYear": 1997 },
+    { "id": 8, "title": "Harry Potter and the Chamber of Secrets", "authorId": 4, "publishedYear": 1998 },
+    { "id": 9, "title": "The Shining", "authorId": 5, "publishedYear": 1977 },
+    { "id": 10, "title": "It", "authorId": 5, "publishedYear": 1986 },
+    { "id": 11, "title": "Pride and Prejudice", "authorId": 6, "publishedYear": 1813 },
+    { "id": 12, "title": "Emma", "authorId": 6, "publishedYear": 1815 },
+    { "id": 13, "title": "The Catcher in the Rye", "authorId": 7, "publishedYear": 1951 },
+    { "id": 14, "title": "Franny and Zooey", "authorId": 7, "publishedYear": 1961 },
+    { "id": 15, "title": "The Great Gatsby", "authorId": 8, "publishedYear": 1925 },
+    { "id": 16, "title": "Tender Is the Night", "authorId": 8, "publishedYear": 1934 },
+    { "id": 17, "title": "Slaughterhouse-Five", "authorId": 9, "publishedYear": 1969 },
+    { "id": 18, "title": "Cat's Cradle", "authorId": 9, "publishedYear": 1963 },
+    { "id": 19, "title": "Beloved", "authorId": 10, "publishedYear": 1987 },
+    { "id": 20, "title": "Song of Solomon", "authorId": 10, "publishedYear": 1977 },
+    { "id": 21, "title": "Homage to Catalonia", "authorId": 1, "publishedYear": 1938 },
+    { "id": 22, "title": "The Doors of Perception", "authorId": 2, "publishedYear": 1954 },
+    { "id": 23, "title": "Sense and Sensibility", "authorId": 6, "publishedYear": 1811 },
+    { "id": 24, "title": "Jazz", "authorId": 10, "publishedYear": 1992 }
+  ],
+  "authors": [
+    { "id": 1, "name": "George Orwell", "birthYear": 1903 },
+    { "id": 2, "name": "Aldous Huxley", "birthYear": 1894 },
+    { "id": 3, "name": "Harper Lee", "birthYear": 1926 },
+    { "id": 4, "name": "J.K. Rowling", "birthYear": 1965 },
+    { "id": 5, "name": "Stephen King", "birthYear": 1947 },
+    { "id": 6, "name": "Jane Austen", "birthYear": 1775 },
+    { "id": 7, "name": "J.D. Salinger", "birthYear": 1919 },
+    { "id": 8, "name": "F. Scott Fitzgerald", "birthYear": 1896 },
+    { "id": 9, "name": "Kurt Vonnegut", "birthYear": 1922 },
+    { "id": 10, "name": "Toni Morrison", "birthYear": 1931 }
+  ]
+}
