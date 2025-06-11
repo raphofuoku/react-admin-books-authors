@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Edit,
   SimpleForm,
@@ -6,31 +5,23 @@ import {
   NumberInput,
   required,
   TopToolbar,
-  ListButton,
-  ShowButton,
+  ListButton
 } from 'react-admin';
-import { Card, Box, Typography } from '@mui/material';
-import AuthorReferenceInput from '../reused/AuthorReferenceInput';
+import { Typography } from '@mui/material';
+import AuthorReferenceInput from '../authors/AuthorReferenceInput';
 
 // Custom edit actions
 const EditActions = () => (
   <TopToolbar>
     <ListButton />
-    <ShowButton />
   </TopToolbar>
 );
 
-const BookEdit: React.FC = () => {
+const BookEdit = () => {
   return (
-    <Box sx={{ padding: 2 }}>
-      <Card sx={{ padding: 3 }}>
         <Edit
           actions={<EditActions />}
-          sx={{
-            '& .RaEdit-card': {
-              boxShadow: 'none',
-            },
-          }}
+          sx={{ padding: 2 }}
         >
           <SimpleForm
             sx={{
@@ -49,11 +40,6 @@ const BookEdit: React.FC = () => {
               label="Book Title"
               validate={[required()]}
               fullWidth
-              sx={{
-                '& .MuiInputBase-root': {
-                  borderRadius: '8px',
-                },
-              }}
             />
 
             <AuthorReferenceInput
@@ -67,16 +53,9 @@ const BookEdit: React.FC = () => {
               label="Published Year"
               validate={[required()]}
               fullWidth
-              sx={{
-                '& .MuiInputBase-root': {
-                  borderRadius: '8px',
-                },
-              }}
             />
           </SimpleForm>
         </Edit>
-      </Card>
-    </Box>
   );
 };
 

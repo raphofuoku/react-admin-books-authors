@@ -20,11 +20,7 @@ const AuthorReferenceInput: React.FC<AuthorReferenceInputProps> = ({
         optionValue="id"
         required={required}
         fullWidth={fullWidth}
-        sx={{
-          '& .MuiInputBase-root': {
-            borderRadius: '8px',
-          },
-        }}
+        helperText="Select an Author"
       />
     </ReferenceInput>
   );

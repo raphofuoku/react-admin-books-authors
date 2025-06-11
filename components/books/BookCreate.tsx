@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Create,
   SimpleForm,
@@ -8,8 +7,9 @@ import {
   TopToolbar,
   ListButton,
 } from 'react-admin';
-import { Card, Box, Typography } from '@mui/material';
-import AuthorReferenceInput from '../reused/AuthorReferenceInput';
+import { Typography } from '@mui/material';
+import AuthorReferenceInput from '../authors/AuthorReferenceInput';
+import { BookFormData } from '../../types';
 
 // Custom create actions
 const CreateActions = () => (
@@ -18,63 +18,55 @@ const CreateActions = () => (
   </TopToolbar>
 );
 
-const BookCreate: React.FC = () => {
+const BookCreate = () => {
   return (
-    <Box sx={{ padding: 2 }}>
-      <Card sx={{ padding: 3 }}>
-        <Create
-          actions={<CreateActions />}
+    <Create<BookFormData>
+      actions={<CreateActions />}
+      sx={{ padding: 2 }}
+    >
+      <SimpleForm
+        sx={{
+          maxWidth: 600,
+          '& .MuiFormControl-root': {
+          marginBottom: 2,
+          }
+        }}
+      >
+        <Typography variant="h6" component="h1" gutterBottom sx={{ color: '#334155', marginBottom: 3 }}>
+          Add New Book
+        </Typography>
+
+        <TextInput
+          source="title"
+          label="Book Title"
+          validate={[required()]}
+          fullWidth
           sx={{
-            '& .RaCreate-card': {
-              boxShadow: 'none',
-            },
+            '& .MuiInputBase-root': {
+            borderRadius: '8px',
+            }
           }}
-        >
-          <SimpleForm
-            sx={{
-              maxWidth: 600,
-              '& .MuiFormControl-root': {
-                marginBottom: 2,
-              },
-            }}
-          >
-            <Typography variant="h6" gutterBottom sx={{ color: '#334155', marginBottom: 3 }}>
-              Add New Book
-            </Typography>
+        />
 
-            <TextInput
-              source="title"
-              label="Book Title"
-              validate={[required()]}
-              fullWidth
-              sx={{
-                '& .MuiInputBase-root': {
-                  borderRadius: '8px',
-                },
-              }}
-            />
+        <AuthorReferenceInput
+          source="authorId"
+          label="Author"
+          required={true}
+        />
 
-            <AuthorReferenceInput
-              source="authorId"
-              label="Author"
-              required={true}
-            />
-
-            <NumberInput
-              source="publishedYear"
-              label="Published Year"
-              validate={[required()]}
-              fullWidth
-              sx={{
-                '& .MuiInputBase-root': {
-                  borderRadius: '8px',
-                },
-              }}
-            />
-          </SimpleForm>
-        </Create>
-      </Card>
-    </Box>
+        <NumberInput
+          source="publishedYear"
+          label="Published Year"
+          validate={[required()]}
+          fullWidth
+          sx={{
+            '& .MuiInputBase-root': {
+            borderRadius: '8px',
+            }
+          }}
+        />
+      </SimpleForm>
+    </Create>
   );
 };
 
