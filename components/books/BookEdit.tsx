@@ -31,7 +31,7 @@ const BookEdit = () => {
               },
             }}
           >
-            <Typography variant="h6" gutterBottom sx={{ color: '#334155', marginBottom: 3 }}>
+            <Typography variant="h6" component="h1" gutterBottom sx={{ color: '#334155', marginBottom: 3 }}>
               Edit Book Details
             </Typography>
 

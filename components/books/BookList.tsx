@@ -51,7 +51,6 @@ const BookList = () => {
       perPage={10}
       actions={<ListActions />}
       sx={{ padding: 2 }}
-      emptyWhileLoading
     >
       <Datagrid
         rowClick="edit"

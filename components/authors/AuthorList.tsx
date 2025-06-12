@@ -11,7 +11,12 @@ import { Author } from '../../types';
 
 // Custom filters for the author list
 const authorFilters = [
-  <SearchInput source="q" placeholder="Search by Name" alwaysOn key="search-author-name" />
+  <SearchInput
+    source="q"
+    placeholder="Search by Name"
+    key="search-author-name"
+    alwaysOn
+  />
 ];
 
 // Custom list actions
@@ -28,7 +33,6 @@ const AuthorList = () => {
       perPage={10}
       actions={<ListActions />}
       sx={{ padding: 2 }}
-      emptyWhileLoading
     >
       <Datagrid>
         <TextField
