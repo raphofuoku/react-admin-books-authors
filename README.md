@@ -47,9 +47,9 @@ A comprehensive Books and Authors management interface built with React Admin v5
    ```
    This will start the mock API server on `http://localhost:3001`
 
-4. **Start the React Application**
+4. **Start the React Admin Application**
    ```bash
-   npm start
+   npm run dev
    ```
    The application will open at `http://localhost:5173`
 
