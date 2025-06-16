@@ -123,7 +123,7 @@ The application uses json-server with the following endpoints:
 ## Customization
 
 ### Theme
-The application uses a custom Material-UI theme defined in `App.tsx`. You can modify colors, typography, and component styles by updating the theme configuration.
+The application uses a custom Material-UI theme. You can modify colors, typography, and component styles by updating the theme configuration.
 
 ### Validation
 Form validation rules are defined in the respective edit/create components. You can customize validation by modifying the `validate` prop arrays.
@@ -133,8 +133,8 @@ Additional filters can be added by extending the filter components in the list v
 
 ## Technologies Used
 
-- **React 18**: Latest React with hooks and functional components
-- **React Admin 5**: Modern admin interface framework
+- **React 19**: Latest React with hooks and functional components
+- **React Admin 5+**: Modern admin interface framework
 - **TypeScript**: Type safety and better developer experience
 - **Material-UI**: Modern, accessible UI components
 - **json-server**: Mock REST API for development
