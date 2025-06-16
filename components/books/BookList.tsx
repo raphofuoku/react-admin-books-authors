@@ -38,9 +38,15 @@ const bookFilters = [
 // Custom list actions
 const ListActions = () => (
   <TopToolbar>
-    <FilterButton />
-    <CreateButton />
-    <ExportButton />
+    <FilterButton
+      aria-label="Show filters"
+    />
+    <CreateButton
+      aria-label="Create new book"
+    />
+    <ExportButton
+      aria-label="Export book list"
+    />
   </TopToolbar>
 );
 
@@ -51,6 +57,7 @@ const BookList = () => {
       perPage={10}
       actions={<ListActions />}
       sx={{ padding: 2 }}
+      title="Books Management"
     >
       <Datagrid
         rowClick="edit"
